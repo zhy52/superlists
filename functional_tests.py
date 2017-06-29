@@ -12,7 +12,7 @@ class NewVIstorTest(unittest.TestCase):
     def test_can_start_a_list_and_retrieve_it_later(self):
         # 伊迪丝听说在线待办事项应用
         # 她去看了应用首页
-        browser.get('http://localhost:8000')
+        self.browser.get('http://localhost:8000')
 
         # 她注意到网页标题和头部都有 "To-do" 这个词
         self.assertIn('To-do', self.browser.title) 
@@ -38,10 +38,8 @@ class NewVIstorTest(unittest.TestCase):
         # 她访问那个URL，发现她的待办列表还在
         
         # 她很满意，走了
-            
-        browser.quit()
         
 if __name__ == '__main__':
-    unittest.main(Warning="ignore")
+    unittest.main(warnings="ignore")
 
 
