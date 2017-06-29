@@ -15,7 +15,8 @@ class NewVIstorTest(unittest.TestCase):
         browser.get('http://localhost:8000')
 
         # 她注意到网页标题和头部都有 "To-do" 这个词
-        assert 'To-do' in browser.title，“Browser title was” + browser.title 
+        self.assertIn('To-do', self.browser.title) 
+        self.fail('Finish the test!') 
 
         # 应用邀请她输入一个待办事项
 
